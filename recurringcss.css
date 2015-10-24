@@ -159,7 +159,8 @@ button {
   line-height: normal;
 }
 
-select {
+select,
+option {
   cursor: pointer;
 }
 
@@ -206,6 +207,7 @@ input[type="submit"] {
   display: inline-block;
   width: auto;
   border: 0;
+  cursor: pointer;
   background-color: #B0B0B0;
   -webkit-transition: background-color 0.3s ease, color .3s ease;
           transition: background-color 0.3s ease, color .3s ease;
