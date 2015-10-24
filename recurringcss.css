@@ -167,6 +167,19 @@ option {
   padding: 0;
 }
 
+::-webkit-input-placeholder {
+  color: inherit;
+}
+
+::-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {  
+  color: inherit; 
+}
+
 :invalid {
   box-shadow: none;
 }
