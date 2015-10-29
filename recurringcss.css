@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*! recurringcss.css v0.9 | GNU Public License 3.0 */
 
 /*
@@ -12,7 +13,7 @@
 
 html {
   color: #202020;
-  font-size: 4px;
+  font-size: 4pt;
   box-sizing: border-box;
   font-family: 'Open Sans', Arial, sans-serif;
   height: 100%;
@@ -52,6 +53,7 @@ svg {
   max-width: 100%;
   height: auto;
   border: 0;
+  -ms-interpolation-mode: bicubic;
 }
 
 svg {
@@ -113,8 +115,8 @@ a {
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #909090;
-  -webkit-transition: color 0.3s ease, border 0.3s ease;
-          transition: color 0.3s ease, border 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
 }
 
 a:hover,
@@ -222,12 +224,14 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 }
 
 
-input[type="image"] {
+input[type="image"],
+a img{
   border: 0;
   padding: 0;
 }
 
-input[type="image"]:hover, input[type="image"]:focus {
+input[type="image"]:hover, input[type="image"]:focus,
+a img:hover, a img:focus {
   -webkit-filter: brightness(1.5);
           filter: brightness(1.5);
 }
@@ -235,18 +239,6 @@ input[type="image"]:hover, input[type="image"]:focus {
 textarea {
   resize: vertical;
   border: 1px solid #B0B0B0;
-}
-
-textarea:-moz-submit-invalid {
-  border: 1px solid #E74C3C;
-}
-
-textarea:-moz-ui-invalid {
-  border: 1px solid #E74C3C;
-}
-
-textarea:hover, textarea:focus {
-  border: 1px solid #05487f;
 }
 
 label {
