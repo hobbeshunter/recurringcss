@@ -159,6 +159,11 @@ button {
   outline: 0;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
 input,
 select,
 button {
